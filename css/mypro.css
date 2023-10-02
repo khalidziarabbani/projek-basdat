@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root{
+    --blue:#3498db;
+    --red:#e74c3c;
+    --orange:#E09134;
+    --black:#333;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+    --border:2px solid var(--black);
+}
+  
+  
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+  
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+  
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+html::-webkit-scrollbar-track {
+    background: #fff;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: #4E6C50;
+    border-radius: 5rem;
+}
+  
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+  
+section {
+    padding: 3rem 9%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #4E6C50;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+  
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #c9d2ca;
+    display: inline-block;
+    margin: 0 1rem;
+}
+  
+.header .navbar a:hover {
+    color: #fff;
+}
+  
+.header .btn {
+    margin-top: 0;
+}
+  
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+  
+  
+.logo i {
+    padding-right: .5rem;
+}
+  
+#menu-btn {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    border: 0.2rem solid #fff;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+}
+  
+.btn:hover {
+    background: #fff;
+    color: #4E6C50;
+}
+
+@media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 1.5rem 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: #4E6C50;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+      margin: 2rem;
+      font-size: 2rem;
+      display: block;
+    }
+    .home {
+      margin-top: 10rem;
+    }
+    .home .content span {
+      font-size: 8vw;
+    }
+    .home .content h3 {
+      font-size: 9vw;
+    }
+}
+  
+@media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .about .content h3 {
+      font-size: 3.5rem;
+    }
+    .banner .content h3 {
+      font-size: 2.7rem;
+    }
+}
+
+
+.btn-cok {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #4E6C50;
+  border: 0.2rem solid #4E6C50;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+
+.btn-cok:hover {
+  background: #4E6C50;
+  color: #fff;
+}
+
+.services {
+  padding-top: 10rem;
+}
+
+.services .heading h1{
+  font-size: 3rem;
+  color: #E09134;
+  text-align: center;
+}
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+  border-style: ridge;
+  border-color: #4E6C50;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.services .box-container .box {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 3rem;
+  text-align: left;
+  border: 0.2rem solid #fff;
+  font-size: 1.5rem;
+  color: #4E6C50;
+}
+
+
